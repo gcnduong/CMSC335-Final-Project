@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Display Screen</title>
+    <style>
+        h1 {color: blue;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jokes</h1>
+        <a href="/">Home</a>
+        <a href="/favorites">View Favorites</a>
+        <div id="jokesContainer">
+            <% jokes.forEach(joke => { %>
+                <div class="joke">
+                    <p><%= joke %></p>
+                </div>
+            <% }); %>
+        </div>
+        <h2>Favorite a Joke</h2>
+
+        <!-- Type in liked jokes to store in favorites page later -->
+        <form action="/favorites" method="POST">
+            <textarea name="favoriteJoke" placeholder="Type your joke here..." rows="4" cols="50"></textarea>
+            <button type="submit">Add to Favorites</button>
+        </form>
+        </div>
+    </div>
+</body>
+
+</html>

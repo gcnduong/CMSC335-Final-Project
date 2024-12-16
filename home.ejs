@@ -1,0 +1,33 @@
+<!-- Home page -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <style>
+        h1 {color: blue;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Yo Momma!</h1>
+            <form action="/display" method="post">
+                <label for="keywordSelect">Choose a keyword:</label>
+                <select id="keywordSelect" name="keyword">
+                    <option value="" selected>Choose a keyword...</option>
+                    <option value="fat">Fat</option>
+                    <option value="ugly">Ugly</option>
+                    <option value="old">Old</option>
+                    <option value="greasy">Greasy</option>
+                    <option value="nasty">Nasty</option>
+                    <option value="hairy">Hairy</option>
+                    <option value="short">Short</option>
+                </select>
+                <button class="button" id="filterJokes">Filter Jokes</button>
+            </form>
+    </div>
+</body>
+
+</html>

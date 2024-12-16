@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Favorites Page</title>
+    <style>
+        h1 {color: blue;}
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/">Home</a>
+        <div id="favoritesContainer">
+            <% jokes.forEach(joke => { %>
+                <div class="joke">
+                    <p><%= joke.joke %></p>
+                </div>
+            <% }); %>
+        </div>
+
+        <form action="/clearFavorites" method="POST">
+            <button type="submit">Clear Favorites</button>
+        </form>
+    </div>
+</body>
+
+</html>
