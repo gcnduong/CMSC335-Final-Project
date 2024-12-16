@@ -1,0 +1,19 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "Submitted by: Grace Duong (directory id: gcnduong)\r Group Members: Grace Duong (gcnduong)\r App Description: Allow users to find images, songs of an author and store the results.\r YouTube Video Link: https://www.youtube.com/MyAmazingAPP\r APIs: VideoApp (http:notrealvideoapp.what), SoundApp (http:notreadlsoundapp.what)\r Contact Email:  gcnduong@terpmail.umd.edu",
+  "main": "BreakingNews.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grace Duong",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.0"
+  }
+}
